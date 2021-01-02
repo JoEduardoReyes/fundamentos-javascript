@@ -1,8 +1,12 @@
 var nombre = "Eduardo",
-  apellido = "Reyes",
-  edad = 28;
-edad = "28 años";
-var peso = 75;
+  apellido = "Reyes";
 
-console.log("Hola " + nombre + " " + apellido);
-console.log("Tengo " + edad + " años");
+var nombreEnMayusculas = nombre.toUpperCase();
+var apellidoEnMinusculas = apellido.toLowerCase();
+
+var primeraLetraDelNombre = nombre.charAt(0);
+var cantidadDeLetrasDelNombre = nombre.length;
+
+var nombreCompleto = `${nombre} ${apellido.toUpperCase()}`;
+
+var str = nombre.substr(1, 2);

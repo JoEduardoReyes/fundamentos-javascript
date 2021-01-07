@@ -37,6 +37,5 @@ var paula = {
 var personas = [sacha, alan, martin, dario, vicky, paula];
 
 for (var i = 0; i < personas.length; i++) {
-  var persona = personas[i];
-  console.log(`${persona.nombre} mide ${persona.altura}m`);
+  console.log(`${personas[i].nombre} mide ${personas[i].altura}m`);
 }

@@ -6,4 +6,6 @@ do {
   contador++;
 } while (!llueve());
 
-console.log(`fui a ver si llovia ${contador} veces`);
+var veces = () => (contador === 1 ? "vez" : "veces");
+
+console.log(`fui a ver si llovia ${contador} ${veces()}`);

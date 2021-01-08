@@ -45,3 +45,13 @@ var personasBajas = personas.filter(esBaja);
 // var personasAltas = personas.filter(function (persona) {
 //   return persona.altura > 1.8;
 // });
+for (var i = 0; i < personasAltas.length; i++) {
+  console.log(
+    `${personasAltas[i].nombre} mide ${personasAltas[i].altura}m y es considerada alta`
+  );
+}
+for (var i = 0; i < personasBajas.length; i++) {
+  console.log(
+    `${personasBajas[i].nombre} mide ${personasBajas[i].altura}m y es considerada baja`
+  );
+}

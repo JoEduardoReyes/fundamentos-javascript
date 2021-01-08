@@ -34,13 +34,14 @@ var paula = {
   altura: 1.76,
 };
 
-const esAlta = ({ altura }) => altura > 1.8;
+const ALTURA_MEDIA = 1.75;
+const esAlta = ({ altura }) => altura > ALTURA_MEDIA;
+const esBaja = ({ altura }) => altura < ALTURA_MEDIA;
 
 var personas = [sacha, alan, martin, dario, vicky, paula];
 
 var personasAltas = personas.filter(esAlta);
+var personasBajas = personas.filter(esBaja);
 // var personasAltas = personas.filter(function (persona) {
 //   return persona.altura > 1.8;
 // });
-
-console.log(personasAltas);

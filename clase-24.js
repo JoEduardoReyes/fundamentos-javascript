@@ -15,9 +15,6 @@ class Persona {
 }
 
 class Desarrollador extends Persona {
-  constructor(nombre, apellido, altura) {
-    super(nombre, apellido, altura);
-  }
   saludar() {
     console.log(
       `Hola me llamno ${this.nombre} ${this.apellido} y soy desarrollador/a`

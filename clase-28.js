@@ -3,7 +3,9 @@ const PEOPLE_URL = "people/:id";
 const opts = { crossDomain: true };
 
 const onPeopleResponse = function (persona) {
-  console.log(`Hola, soy ${persona.result.properties.name}`);
+  console.log(
+    `Hola, soy ${persona.result.properties.name} y soy el personaje numero ${persona.result.uid}`
+  );
 };
 
 function obtenerPersonaje(id) {
@@ -11,6 +13,6 @@ function obtenerPersonaje(id) {
   $.get(url, opts, onPeopleResponse);
 }
 
-obtenerPersonaje(1);
-obtenerPersonaje(2);
-obtenerPersonaje(3);
+for (let index = 0; index < 85; index++) {
+  obtenerPersonaje(index);
+}

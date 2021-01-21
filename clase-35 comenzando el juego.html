@@ -20,6 +20,8 @@
         margin: 0 auto;
         max-height: 60vh;
         max-width: 60vh;
+        min-height: 500px;
+        min-width: 500px;
       }
 
       .color {
@@ -84,10 +86,27 @@
       }
       * {
         font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+      /* Qui van las instrucciones */
+      .game-text {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px;
+        min-width: 500px;
       }
     </style>
   </head>
   <body>
+    <div class="game-text">
+      <h1>Juego basico de memoria</h1>
+      <p>
+        <b>Instrucciones:</b> presiona el boton "Empezar a jugar", y espera a
+        que los colores dejen de brillar, luego haz click en los colores en el
+        mismo orden en el que brillaron. Si superas a la 10ma ronda ganaste!
+      </p>
+    </div>
     <div class="gameboard">
       <div id="celeste" class="color celeste left" data-color="celeste"></div>
       <div id="violeta" class="color violeta right" data-color="violeta"></div>

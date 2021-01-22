@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 47 - Diferencias entra var y let</title>
+  </head>
+  <body></body>
+  <script>
+    var eduardo = {
+      nombre: "Eduardo",
+      apellido: "Reyes",
+      edad: 22,
+    };
+
+    function esMayorDeEdad(persona) {
+      let mensaje;
+      const MAYORIA_DE_EDA0D = 18;
+      if (persona.edad >= MAYORIA_DE_EDAD) {
+        mensaje = "Es mayor de edad";
+      } else {
+        mensaje = "Es menor de edad";
+      }
+      console.log(mensaje);
+    }
+
+    // esMayorDeEdad(eduardo);
+
+    for (var index = 0; index < 10; index++) {
+      console.log(index);
+    }
+    console.log(`termino el ciclo y ${index}`);
+  </script>
+</html>
